@@ -1,0 +1,101 @@
+<!-- Write your HTML here -->
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .display{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+      font-family:Georgia, 'Times New Roman', Times, serif
+    }
+  </style>
+</head>
+<body>
+  <a href="video.html">
+  </a>
+  <!-- <img src="2.jpg" class="display"> -->
+  <h2 class="display">
+    <p>Click any option which you want to see</p>
+    <p>Note: Word "I" represented create of the website</p>
+  </h2>
+  <div class="display">
+    <input type="radio" name="answer" value="love"  />Do I love you<br>
+    <input type="radio" name="answer" value="miss"  />Do I miss you<br>
+    <input type="radio" name="answer" value="lucky" />How lucky am I<br>
+    <input type="radio" name="answer" value="icy"  />How much I care about you?<br>
+    <p>If you have anymore doubts,let me know I am ready to prove my love</p>
+    <input type="button" value="Find out" onclick="findAnswer()" /><br>
+    <!-- <input type="button" value="Clear" onclick="clear()"> -->
+  </div>
+  <br>
+  <div id="love-ans" class="display" style="display: none;" > <!--  -->
+    <!-- <br> -->
+    <img src="assets/1628540208760.jpg" class="display">
+    <p>I dont think it cannot be considered as a question,Yet I will answer your question.
+      Yes you pretty and cute dumb girl, of course I LOVE YOU SO MUCH....
+      You are too good for me.Sometimes I feel every little about myself.You complete me.
+      <br><b>I am not be sure about many thing,but one thing I am always sure about that I never loved anyone the way I love you..</b>
+    </p>
+  </div>
+  <div id="miss-ans" style="display: none;">
+    <video width="320" height="240" controls>
+      <source src="assets/Screenrecorder-2021-06-24-01-03-44-283.mp4" type="video/mp4">
+    </video>
+    <p>I think about you everytime.Only thought in my mind is you.It is always you.
+      The way you make such cute expression.I will just cry thinking about you.You are the only reason I AM HAPPIESTT.
+      You uplift my mood.Whenever I see you laughing or smiling,you have no idea how much that smile means to me babe.
+    </p>
+  </div>
+  <div id="lucky-ans" style="display: none;">
+    <img src="assets/1631648275020.jpg" class="display">
+    <p>You are the only good thing that has happened to me after very long time.I am luckiest to have you in my life.
+      I will keep my luck charm safe.
+      I love you so much!!!!!!!!!</p>
+    </div>
+    <div id="icy-ans" style="display: none;">
+      <img src="assets/1630179060189.jpg" class="display">
+      <p>I care about you more than my life.You dont know even I see one tear in your eyes.It just unbearable for me to see crying.I would do anything to keep you happy.
+        BECAUSE I LOVE YOU MORE THAN YOU CAN IMAGINE,YOU ARE MY WORLD,I WILL NEVER ANYTHING HAPPEN TO MY WORLD.YOU ARE MINE,ONLY MINEEEE. </p>
+      </div>
+    </body>
+    <script>
+      function findAnswer() {
+        var answer = document.querySelector('input[name="answer"]:checked').value;
+        if(answer == 'love'){
+          document.getElementById('love-ans').style.display = "block"
+        } else {
+          document.getElementById('love-ans').style.display = "none"
+        }
+        if (answer == 'miss') {
+          document.getElementById('miss-ans').style.display = "block"
+        } else {
+          document.getElementById('miss-ans').style.display = "none"
+        }
+        if (answer == 'lucky') {
+          document.getElementById('lucky-ans').style.display = "block"
+        } else {
+          document.getElementById('lucky-ans').style.display = "none"
+        }
+        if (answer == 'icy') {
+          document.getElementById('icy-ans').style.display = "block"
+        } else {
+          document.getElementById('icy-ans').style.display = "none"
+        }
+      }
+
+    </script>
+    <script>
+      function clear() {
+        console.log('refresh')
+        document.getElementById('love-ans').style.display = "none"
+        document.getElementById('miss-ans').style.display = "none"
+        document.getElementById('lucky-ans').style.display = "none"
+        document.getElementById('icy-ans').style.display = "none"
+      }
+    </script>
+    <!-- //miss
+      lucky
+      icy -->
+      </html>
